@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Επιπλωμένο διαμέρισμα 5ου ορόφου (ρετιρέ) | Ενοικίαση</title>
+    <meta name="description" content="Ενοικιάζεται επιπλωμένο διαμέρισμα 5ου ορόφου (ρετιρέ). Φωτεινό, άνετο, με μεγάλη βεράντα και όλες τις σύγχρονες ανέσεις.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span class="logo-text">Ρετιρέ 5ου Ορόφου</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#overview">Περιγραφή</a>
+                <a href="#floorplan">Κάτοψη</a>
+                <a href="#gallery">Φωτογραφίες</a>
+                <a href="#features">Χαρακτηριστικά</a>
+                <a href="#contact" class="btn btn-sm btn-primary">Επικοινωνία</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="overview">
+        <div class="hero-backdrop"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">✨ Διαθέσιμο προς Ενοικίαση</div>
+            <h1 class="hero-title">Επιπλωμένο διαμέρισμα 5ου ορόφου (ρετιρέ)</h1>
+            <p class="hero-subtitle">
+                Ένα εξαιρετικό, φωτεινό και διαμπερές ρετιρέ διαμέρισμα με ανεμπόδιστη θέα, μεγάλη βεράντα και πλήρη επίπλωση. Έτοιμο για άμεση κατοίκιση.
+            </p>
+            <div class="hero-features-chips">
+                <span class="chip">🏢 5ος Όροφος (Ρετιρέ)</span>
+                <span class="chip">🛋️ Πλήρως Επιπλωμένο</span>
+                <span class="chip">🌿 Μεγάλη Βεράντα</span>
+                <span class="chip">☀️ Διαμπερές & Φωτεινό</span>
+                <span class="chip">🛗 Ασανσέρ</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#gallery" class="btn btn-primary btn-lg">Προβολή Φωτογραφιών</a>
+                <a href="#contact" class="btn btn-outline btn-lg">Εκδήλωση Ενδιαφέροντος</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor Plan Highlight Section -->
+    <section class="section floorplan-section" id="floorplan">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Αρχιτεκτονική Διάταξη</span>
+                <h2 class="section-title">Κάτοψη Διαμερίσματος</h2>
+                <p class="section-subtitle">Δείτε τη λειτουργική διαρρύθμιση των χώρων του διαμερίσματος.</p>
+            </div>
+            
+            <div class="floorplan-card">
+                <div class="floorplan-img-wrapper" onclick="openLightbox(0)">
+                    <img src="./0-κατοψη.jpg" alt="Κάτοψη Διαμερίσματος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/0-κατοψη.jpg'">
+                    <div class="img-overlay">
+                        <span class="zoom-icon">🔍 Μεγέθυνση Κάτοψης</span>
+                    </div>
+                </div>
+                <div class="floorplan-info">
+                    <h3>Έξυπνη & Άνετη Διαρρύθμιση</h3>
+                    <p>Η κάτοψη αναδεικνύει τους άνετους χώρους υποδοχής, τη λειτουργική κουζίνα, τα φωτεινά υπνοδωμάτια και την άμεση πρόσβαση στη μεγάλη βεράντα του ρετιρέ.</p>
+                    <button class="btn btn-secondary" onclick="openLightbox(0)">Προβολή Κάτοψης σε Πλήρη Οθόνη</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Πλήρης Φωτογραφικός Οδηγός</span>
+                <h2 class="section-title">Φωτογραφίες Διαμερίσματος</h2>
+                <p class="section-subtitle">Περιηγηθείτε στους εσωτερικούς και εξωτερικούς χώρους του διαμερίσματος (24 Φωτογραφίες).</p>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Gallery Item 0 (Floorplan) -->
+                <div class="gallery-card" onclick="openLightbox(0)">
+                    <div class="card-img-container">
+                        <img src="./0-κατοψη.jpg" alt="0 - Κάτοψη" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/0-κατοψη.jpg'">
+                        <span class="card-badge">0. Κάτοψη</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 1 -->
+                <div class="gallery-card" onclick="openLightbox(1)">
+                    <div class="card-img-container">
+                        <img src="./1-IMG_20260725_192051.jpg" alt="1 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/1-IMG_20260725_192051.jpg'">
+                        <span class="card-badge">1</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 (1.5) -->
+                <div class="gallery-card" onclick="openLightbox(2)">
+                    <div class="card-img-container">
+                        <img src="./1.5-IMG_20260725_183235.jpg" alt="1.5 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/1.5-IMG_20260725_183235'">
+                        <span class="card-badge">1.5</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-card" onclick="openLightbox(3)">
+                    <div class="card-img-container">
+                        <img src="./2-IMG_20260725_191949.jpg" alt="2 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/2-IMG_20260725_191949.jpg'">
+                        <span class="card-badge">2</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-card" onclick="openLightbox(4)">
+                    <div class="card-img-container">
+                        <img src="./3-IMG_20260725_182928.jpg" alt="3 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/3-IMG_20260725_182928.jpg'">
+                        <span class="card-badge">3</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-card" onclick="openLightbox(5)">
+                    <div class="card-img-container">
+                        <img src="./4-IMG_20260725_182855.jpg" alt="4 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/4-IMG_20260725_182855.jpg'">
+                        <span class="card-badge">4</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-card" onclick="openLightbox(6)">
+                    <div class="card-img-container">
+                        <img src="./5-IMG_20260725_182642.jpg" alt="5 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/5-IMG_20260725_182642.jpg'">
+                        <span class="card-badge">5</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-card" onclick="openLightbox(7)">
+                    <div class="card-img-container">
+                        <img src="./6-IMG_20260725_193302.jpg" alt="6 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/6-IMG_20260725_193302.jpg'">
+                        <span class="card-badge">6</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-card" onclick="openLightbox(8)">
+                    <div class="card-img-container">
+                        <img src="./7-IMG_20260725_182818.jpg" alt="7 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/7-IMG_20260725_182818.jpg'">
+                        <span class="card-badge">7</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9 -->
+                <div class="gallery-card" onclick="openLightbox(9)">
+                    <div class="card-img-container">
+                        <img src="./8-IMG_20260725_184943 copy.jpg" alt="8 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/8-IMG_20260725_184943%20copy.jpg'">
+                        <span class="card-badge">8</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 10 -->
+                <div class="gallery-card" onclick="openLightbox(10)">
+                    <div class="card-img-container">
+                        <img src="./9-IMG_20260725_193232.jpg" alt="9 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/9-IMG_20260725_193232.jpg'">
+                        <span class="card-badge">9</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 11 -->
+                <div class="gallery-card" onclick="openLightbox(11)">
+                    <div class="card-img-container">
+                        <img src="./10-IMG_20260725_193343.jpg" alt="10 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/10-IMG_20260725_193343.jpg'">
+                        <span class="card-badge">10</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 12 -->
+                <div class="gallery-card" onclick="openLightbox(12)">
+                    <div class="card-img-container">
+                        <img src="./11-IMG_20260725_183829.jpg" alt="11 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/11-IMG_20260725_183829.jpg'">
+                        <span class="card-badge">11</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 13 -->
+                <div class="gallery-card" onclick="openLightbox(13)">
+                    <div class="card-img-container">
+                        <img src="./12-IMG_20260725_183841.jpg" alt="12 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/12-IMG_20260725_183841.jpg'">
+                        <span class="card-badge">12</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 14 -->
+                <div class="gallery-card" onclick="openLightbox(14)">
+                    <div class="card-img-container">
+                        <img src="./13-IMG_20260725_184014.jpg" alt="13 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/13-IMG_20260725_184014.jpg'">
+                        <span class="card-badge">13</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 15 -->
+                <div class="gallery-card" onclick="openLightbox(15)">
+                    <div class="card-img-container">
+                        <img src="./14-IMG_20260725_183924.jpg" alt="14 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/14-IMG_20260725_183924.jpg'">
+                        <span class="card-badge">14</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 16 -->
+                <div class="gallery-card" onclick="openLightbox(16)">
+                    <div class="card-img-container">
+                        <img src="./15-IMG_20260725_183801.jpg" alt="15 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/15-IMG_20260725_183801.jpg'">
+                        <span class="card-badge">15</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 17 -->
+                <div class="gallery-card" onclick="openLightbox(17)">
+                    <div class="card-img-container">
+                        <img src="./16-IMG_20260725_183613.jpg" alt="16 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/16-IMG_20260725_183613.jpg'">
+                        <span class="card-badge">16</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 18 -->
+                <div class="gallery-card" onclick="openLightbox(18)">
+                    <div class="card-img-container">
+                        <img src="./17-IMG_20260725_183731.jpg" alt="17 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/17-IMG_20260725_183731.jpg'">
+                        <span class="card-badge">17</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 19 -->
+                <div class="gallery-card" onclick="openLightbox(19)">
+                    <div class="card-img-container">
+                        <img src="./18-IMG_20260725_183542.jpg" alt="18 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/18-IMG_20260725_183542.jpg'">
+                        <span class="card-badge">18</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 20 -->
+                <div class="gallery-card" onclick="openLightbox(20)">
+                    <div class="card-img-container">
+                        <img src="./19-IMG_20260725_183507.jpg" alt="19 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/19-IMG_20260725_183507.jpg'">
+                        <span class="card-badge">19</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 21 -->
+                <div class="gallery-card" onclick="openLightbox(21)">
+                    <div class="card-img-container">
+                        <img src="./20-IMG_20260725_183353.jpg" alt="20 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/20-IMG_20260725_183353.jpg'">
+                        <span class="card-badge">20</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 22 -->
+                <div class="gallery-card" onclick="openLightbox(22)">
+                    <div class="card-img-container">
+                        <img src="./21-IMG_20260725_183010.jpg" alt="21 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/21-IMG_20260725_183010.jpg'">
+                        <span class="card-badge">21</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 23 -->
+                <div class="gallery-card" onclick="openLightbox(23)">
+                    <div class="card-img-container">
+                        <img src="./22-IMG_20260725_184753.jpg" alt="22 - Εσωτερικός Χώρος" loading="lazy" onerror="this.src='https://woocommerce-1520420-5854700.cloudwaysapps.com/tmp/pht/22-IMG_20260725_184753.jpg'">
+                        <span class="card-badge">22</span>
+                        <div class="card-overlay"><span class="icon">🔍</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features & Amenities Section -->
+    <section class="section features-section" id="features">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Πλεονεκτήματα</span>
+                <h2 class="section-title">Χαρακτηριστικά & Παροχές</h2>
+                <p class="section-subtitle">Όλα όσα προσφέρει το διαμέρισμα για μια άνετη διαμονή.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3>5ος Όροφος (Ρετιρέ)</h3>
+                    <p>Ανεμπόδιστη θέα, μέγιστη ιδιωτικότητα, ησυχία και φυσικός φωτισμός όλη την ημέρα.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛋️</div>
+                    <h3>Πλήρως Επιπλωμένο</h3>
+                    <p>Εξοπλισμένο με ποιοτικά έπιπλα, καναπέ, κρεβάτι, ντουλάπες και τραπεζαρία.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Ηλεκτρικές Συσκευές</h3>
+                    <p>Περιλαμβάνει ψυγείο, κουζίνα/φούρνο, πλυντήριο ρούχων και κλιματισμό (A/C).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Μεγάλη Βεράντα</h3>
+                    <p>Άνετος εξωτερικός χώρος βεράντας ιδανικός για χαλάρωση και φιλοξενία.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☀️</div>
+                    <h3>Φωτεινό & Διαμπερές</h3>
+                    <p>Μεγάλα μπαλκονόπορτα και παράθυρα που εξασφαλίζουν εξαιρετικό αερισμό και φως.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛗</div>
+                    <h3>Σύγχρονη Οικοδομή</h3>
+                    <p>Πολυκατοικία με ασανσέρ, καθαρούς κοινόχρηστους χώρους και εύκολη πρόσβαση.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Inquiry Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-info">
+                    <span class="section-tag light">Επικοινωνία</span>
+                    <h2>Ενδιαφέρεστε για το διαμέρισμα;</h2>
+                    <p>Επικοινωνήστε μαζί μας για περισσότερες πληροφορίες ή για να προγραμματίσετε μια επίσκεψη στους χώρους του διαμερίσματος.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="method-item">
+                            <span class="method-icon">📞</span>
+                            <div>
+                                <span class="method-label">Τηλέφωνο Επικοινωνίας</span>
+                                <span class="method-value">+30 690 000 0000</span>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <span class="method-icon">✉️</span>
+                            <div>
+                                <span class="method-label">Email</span>
+                                <span class="method-value">info@igimonos.pages.dev</span>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <span class="method-icon">📍</span>
+                            <div>
+                                <span class="method-label">Τοποθεσία</span>
+                                <span class="method-value">Κέντρο, Προσβάσιμο με ΜΜΜ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="inquiryForm" onsubmit="handleFormSubmit(event)">
+                        <h3>Φόρμα Εκδήλωσης Ενδιαφέροντος</h3>
+                        <div class="form-group">
+                            <label for="name">Ονοματεπώνυμο</label>
+                            <input type="text" id="name" required placeholder="π.χ. Γιώργος Παπαδόπουλος">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Τηλέφωνο</label>
+                            <input type="tel" id="phone" required placeholder="π.χ. 6912345678">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Μήνυμα / Σχόλια</label>
+                            <textarea id="message" rows="4" placeholder="Γράψτε το μήνυμά σας ή πότε επιθυμείτε να δείτε το διαμέρισμα..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Αποστολή Ενδιαφέροντος</button>
+                        <div class="form-success-msg" id="successMsg">
+                            ✅ Ευχαριστούμε! Το μήνυμά σας εστάλη επιτυχώς. Θα επικοινωνήσουμε μαζί σας σύντομα.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <button class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">&#10094;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-nav lightbox-next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Επιπλωμένο διαμέρισμα 5ου ορόφου (ρετιρέ). Όλα τα δικαιώματα διατηρούνται.</p>
+            <p class="footer-subtext">Φιλοξενία στο <a href="https://igimonos.pages.dev" target="_blank">igimonos.pages.dev</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

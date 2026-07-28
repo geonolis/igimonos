@@ -715,11 +715,97 @@ img {
     color: var(--accent);
 }
 
+/* Furniture & Appliances Section */
+.furniture-section {
+    background: #f1f5f9;
+    border-top: 1px solid var(--border-color);
+}
+
+.furniture-price-banner {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+    border-radius: var(--radius-md);
+    padding: 28px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.furniture-price-banner .price-info h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+}
+
+.furniture-price-banner .price-info p {
+    color: #94a3b8;
+    font-size: 1rem;
+}
+
+.furniture-price-tag {
+    background: var(--accent);
+    color: #ffffff;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 12px 28px;
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+    box-shadow: 0 4px 16px rgba(217, 119, 6, 0.4);
+}
+
+.furniture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+}
+
+.furniture-item-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.25s ease;
+}
+
+.furniture-item-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.furniture-item-icon {
+    font-size: 1.4rem;
+    background: var(--accent-light);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.furniture-item-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 992px) {
     .hero-title { font-size: 2.5rem; }
     .floorplan-card { grid-template-columns: 1fr; }
     .contact-box { grid-template-columns: 1fr; gap: 32px; padding: 24px; }
+    .furniture-price-banner { flex-direction: column; text-align: center; }
 }
 
 @media (max-width: 768px) {

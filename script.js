@@ -72,14 +72,56 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') changeImage(1);
 });
 
-// Form Submission Handler
-function handleFormSubmit(event) {
+// Form Submission Handler (Sends email notification to info@gipapamanolis.gr)
+async function handleFormSubmit(event) {
     event.preventDefault();
+    const form = event.target;
+    const submitBtn = document.getElementById('submitBtn');
     const successMsg = document.getElementById('successMsg');
-    successMsg.style.display = 'block';
-    event.target.reset();
+    const errorMsg = document.getElementById('errorMsg');
 
-    setTimeout(() => {
-        successMsg.style.display = 'none';
-    }, 6000);
+    if (successMsg) successMsg.style.display = 'none';
+    if (errorMsg) errorMsg.style.display = 'none';
+
+    const originalBtnText = submitBtn ? submitBtn.textContent : 'Αποστολή Ενδιαφέροντος';
+    if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Αποστολή...';
+    }
+
+    const formData = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+        _subject: 'Νέα Εκδήλωση Ενδιαφέροντος - Ρετιρέ 5ου Ορόφου (igimonos.pages.dev)'
+    };
+
+    try {
+        const response = await fetch('https://formsubmit.co/ajax/info@gipapamanolis.gr', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+
+        if (response.ok) {
+            if (successMsg) successMsg.style.display = 'block';
+            form.reset();
+            setTimeout(() => {
+                if (successMsg) successMsg.style.display = 'none';
+            }, 7000);
+        } else {
+            if (errorMsg) errorMsg.style.display = 'block';
+        }
+    } catch (err) {
+        if (errorMsg) errorMsg.style.display = 'block';
+    } finally {
+        if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
+        }
+    }
 }
